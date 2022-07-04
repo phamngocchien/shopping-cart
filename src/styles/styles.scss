@@ -1,0 +1,147 @@
+body{
+    font-family: 'Nunito';
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.item {
+    cursor: pointer;
+}
+
+.h-screen-50 {
+    height: 50vh;
+}
+
+.h-screen-75 {
+    height: 75vh;
+}
+
+.h-screen-25 {
+    height: 25vh;
+}
+
+.rounded-b-3xl{
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+
+.text-hero {
+    font-size: 6rem;
+}
+
+.bg-custom-yellow {
+    background-color: #febc2e;
+}
+
+.text-custom-yellow {
+    color: #febc2e;
+}
+.transition-option {
+    transition: color 0.2s ease-in;
+}
+.min-h-72{
+    min-height: 18rem;
+}
+.border-input{
+    border: 1px solid rgb(58, 57, 57);
+}
+@media (max-width: 639px) { 
+    .text-mobile{
+        font-size: 2rem;
+    }
+    .mobile-h{
+        height: 10rem;
+    }
+    .flex-mobile{
+        display: flex;
+        justify-content: center;
+    }
+    .pt-mobile{
+        padding-top: 2rem;
+    }
+    .p-mobile{
+        padding: 1rem;
+    }
+
+    .pb-mobile{
+        padding-bottom: 1rem;
+    }
+    .pt-32-mobile{
+        padding-top: 8rem;
+    }
+    .p-1-mobile{
+        padding: 1rem;
+    }
+    .gap-8-mobile {
+        grid-gap: 2rem;
+        gap: 2rem;
+    }
+    .mb-1-mobile{
+        margin-bottom: 1rem;
+    }
+    .mt-3-mobile{
+        margin-top: 2rem;
+    }
+    .grid-mobile{
+        display: grid;
+        text-align: center;
+    }
+    .text-1-mobile{
+        font-size: 1rem;
+    }
+    .w-full-mobile{
+        width: 100%;
+    }
+    .hidden-mobile{
+        display: none ;
+    }
+    .width-mobile{
+        width: 60%;
+    }
+    .mt-32-mobile{
+        margin-top: 130px;
+    }
+    .w-full-mobile{
+        width: 100%;
+    }
+    
+}
+@media (min-width: 1024px) {
+    .lg-grid-cols-3 {
+        grid-template-columns: repeat(3,minmax(0,1fr));
+    }
+}
+@media (min-width: 1024px){
+    .xl-grid-cols-3 {
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    }
+}
+@media (min-width: 1536px){
+    .xl2-grid-cols-5 {
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    }
+}
+
+.bounce{
+    animation: bounce 1s infinite
+}
+.bounce200{
+    animation: bounce 1s infinite 200ms
+} 
+.bounce400{
+    animation: bounce 1s infinite 400ms
+} 
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(-60%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+
